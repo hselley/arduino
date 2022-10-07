@@ -2,9 +2,9 @@
     Práctica 6
 */
 
-#define ROJO  10
-#define VERDE 11
-#define AZUL  12
+#define ROJO  A10
+#define VERDE A11
+#define AZUL  A12
 int rojo, verde, azul;
 String comando;
 
@@ -67,16 +67,16 @@ void loop() {
       analogWrite(ROJO, rojo);
     } else if(comando == "TG") {
       verde = 255;
-      analogWrite(ROJO, verde);
+      analogWrite(VERDE, verde);
     } else if(comando == "FG") {
       verde = 0;
-      analogWrite(ROJO, verde);
+      analogWrite(VERDE, verde);
     } else if(comando == "TB") {
       azul = 255;
-      analogWrite(ROJO, azul);
+      analogWrite(AZUL, azul);
     } else if(comando == "FB") {
       azul = 0;
-      analogWrite(ROJO, azul);
+      analogWrite(AZUL, azul);
     } else if(comando == "RInc") {
       rojo += 100;
       analogWrite(ROJO, rojo);
@@ -85,16 +85,16 @@ void loop() {
       analogWrite(ROJO, rojo);
     } else if(comando == "GInc") {
       verde += 100;
-      analogWrite(ROJO, verde);
+      analogWrite(VERDE, verde);
     } else if(comando == "GDec") {
       verde -= 100;
-      analogWrite(ROJO, verde);
+      analogWrite(VERDE, verde);
     } else if(comando == "BInc") {
       azul += 100;
-      analogWrite(ROJO, azul);
+      analogWrite(AZUL, azul);
     } else if(comando == "BDec") {
       azul -= 100;
-      analogWrite(ROJO, azul);
+      analogWrite(AZUL, azul);
     } else
         Serial.println("Comando no reconocido.");
   }
