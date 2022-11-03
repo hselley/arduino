@@ -17,6 +17,8 @@ void loop() {
     Serial.println("Ganador = ");
     x = random(1,5);
     Serial.println(x);
+    micro_servo.write(0);
+    delay(3000);
     micro_servo.write(posicion[x-1]);
     delay(100);
   }
