@@ -1,6 +1,6 @@
 #include <Stepper.h>
 Stepper mi_stepper(64, 8, 9, 10, 11);
-int del = 5000, aleatorio;
+int aleatorio;
 
 void setup() {
   Serial.begin(9600);
